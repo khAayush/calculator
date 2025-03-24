@@ -1,3 +1,14 @@
+def modulus():
+    a = float(input("Enter first number: "))
+    b = float(input("Enter second number: "))
+
+    mod = a % b 
+
+    if b != 0:
+        print(f"{a} % {b} is {mod}")
+    else:
+        print("Modulus by zero is not allowed.")
+
 def multiply_numbers():
     try:
         num1 = float(input("Enter first number: "))
