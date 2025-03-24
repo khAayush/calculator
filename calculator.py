@@ -21,6 +21,27 @@ def sum():
     print(f"The sum is {res}")
 
 
+def divide_numbers():
+    try:
+        num1 = float(input("Enter the numerator: "))
+        num2 = float(input("Enter the denominator: "))
+
+        result = num1 / num2
+        print(f"Result: {result}")
+
+    except ZeroDivisionError:
+        print("Error: Division by zero is not allowed.")
+    except ValueError:
+        print("Error: Invalid input! Please enter numeric values.")
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+    finally:
+        print("Division operation completed.")
+
+# Run the function
+divide_numbers()
+
+
 def sub_two_numbers():
     num1 = float(input("Enter first number: "))
     num2 = float(input("Enter second number: "))
