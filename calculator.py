@@ -4,6 +4,17 @@ def sub_two_numbers():
     print("The sub is:", num1-num2)
 
 
+def modulus():
+    a = float(input("Enter first number: "))
+    b = float(input("Enter second number: "))
+
+    mod = a % b 
+
+    if b != 0:
+        print(f"{a} % {b} is {mod}")
+    else:
+        print("Modulus by zero is not allowed.")
+modulus()
 
 def main():
     print("Welcome to the calculator")
