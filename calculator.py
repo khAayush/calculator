@@ -50,5 +50,19 @@ def sub_two_numbers():
 def main():
     print("Welcome to the calculator")
     print("\nChoose one number:\n")
-    print("1. Addition\n2. Substraction\n3. Multiplication\n4. Division")
+    print("1. Addition\n2. Substraction\n3. Multiplication\n4. Division\n5. Modulus")
     ch = int(input("Enter your number for desired operation: "))
+    if ch == 1:
+        sum()
+    elif ch ==2:
+        sub_two_numbers()
+    elif ch == 3:
+        multiply_numbers()
+    elif ch == 4:
+        divide_numbers()
+    elif ch == 5:
+        modulus()
+    else:
+        print("Invalid Choice")
+        
+main()
