@@ -1,19 +1,14 @@
-# Sum of two numbers
-def sum():
-    num1= float(input("Enter first number: "))
-    num2= float(input("Enter another number: "))
-    if num1 <=0 or num2 <= 0:
-        res = num1-num2
-    
-    else:
-        res = num1+num2
-    print(f"The sum is {res}")
-sum()
+def multiply_numbers():
+    try:
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+        result = num1 * num2
+        print(f"The result of multiplication is: {result}")
+    except ValueError:
+        print("Error: Please enter valid numbers.")
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
 
-def sub_two_numbers():
-    num1 = float(input("Enter first number: "))
-    num2 = float(input("Enter second number: "))
-    print("The sub is:", num1-num2)
 
 def main():
     print("Welcome to the calculator")
