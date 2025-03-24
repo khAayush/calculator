@@ -49,9 +49,6 @@ def divide_numbers():
     finally:
         print("Division operation completed.")
 
-# Run the function
-divide_numbers()
-
 
 def sub_two_numbers():
     num1 = float(input("Enter first number: "))
@@ -69,7 +66,6 @@ def modulus():
         print(f"{a} % {b} is {mod}")
     else:
         print("Modulus by zero is not allowed.")
-modulus()
 
 def main():
     print("Welcome to the calculator")
